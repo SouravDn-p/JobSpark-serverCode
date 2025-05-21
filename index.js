@@ -385,7 +385,7 @@ async function run() {
     });
 
     // hugging face ai recommendation route
-    app.get("/recommendations", verifyToken, async (req, res) => {
+    app.get("/recommendations", async (req, res) => {
       try {
         const email = req.user.email; // Get email from JWT token
         console.log("Fetching recommendations for email:", email);
