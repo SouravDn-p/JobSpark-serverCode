@@ -16,6 +16,7 @@ app.use(
       "https://jobspark-sourav246.web.app",
     ],
     credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
   })
 );
 app.use(express.json());
@@ -387,8 +388,8 @@ async function run() {
     // hugging face ai recommendation route
     app.get("/recommendations", async (req, res) => {
       try {
-        const email = req.user.email; // Get email from JWT token
-        console.log("Fetching recommendations for email:", email);
+        const email = req.query.email;
+        // console.log("Fetching recommendations for email:", email);
         const { prompt } = await prepareRecommendationsData(
           email,
           userCollection,
