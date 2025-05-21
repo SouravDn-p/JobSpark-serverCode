@@ -14,6 +14,7 @@ app.use(
       "http://localhost:5173",
       "https://jobspark-sourav246.netlify.app",
       "https://jobspark-sourav246.web.app",
+      "https://darling-pika-83fd27.netlify.app",
     ],
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
