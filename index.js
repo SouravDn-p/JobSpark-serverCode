@@ -296,7 +296,7 @@ async function run() {
     });
 
     //update user profile
-    app.patch("/user/:email", verifyToken, async (req, res) => {
+    app.patch("/user/:email", async (req, res) => {
       const email = req.params.email;
       const { profile } = req.body;
 
