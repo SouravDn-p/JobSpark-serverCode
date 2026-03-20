@@ -1,7 +1,4 @@
 server.js
 node_modules
-temp_auto_push.bat
 .env
-config.bat
-.gitignore
-temp_interactive_push.bat
+
